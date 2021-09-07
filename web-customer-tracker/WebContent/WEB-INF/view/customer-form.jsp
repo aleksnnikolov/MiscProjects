@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Add Customer</title>
+		<title>Save Customer</title>
 		
 		<link type="text/css" 
 			  rel="stylesheet" 
@@ -25,9 +25,12 @@
 		
 		
 		<div id="container">
-			<h3>Add Customer</h3>
+			<h3>Save Customer</h3>
 			
 			<form:form action="saveCustomer" modelAttribute="customer" method="POST">
+				
+				<form:hidden path="id" />
+				
 				<table>
 					<tbody>
 					
